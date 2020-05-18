@@ -1,0 +1,11 @@
+/Users/haofujie/Desktop/ASP.NET/lol/lol/bin/lol.dll
+/Users/haofujie/Desktop/ASP.NET/lol/lol/bin/lol.pdb
+/Users/haofujie/Desktop/ASP.NET/lol/lol/bin/BouncyCastle.Crypto.dll
+/Users/haofujie/Desktop/ASP.NET/lol/lol/bin/Google.Protobuf.dll
+/Users/haofujie/Desktop/ASP.NET/lol/lol/bin/MySql.Data.dll
+/Users/haofujie/Desktop/ASP.NET/lol/lol/bin/Google.Protobuf.xml
+/Users/haofujie/Desktop/ASP.NET/lol/lol/bin/MySql.Data.xml
+/Users/haofujie/Desktop/ASP.NET/lol/lol/obj/Debug/lol.csproj.CoreCompileInputs.cache
+/Users/haofujie/Desktop/ASP.NET/lol/lol/obj/Debug/lol.csproj.CopyComplete
+/Users/haofujie/Desktop/ASP.NET/lol/lol/obj/Debug/lol.dll
+/Users/haofujie/Desktop/ASP.NET/lol/lol/obj/Debug/lol.pdb

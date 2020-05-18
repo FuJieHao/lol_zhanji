@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED69F6AB-8F74-4E6E-9B99-4A832772A4B6}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>lol</RootNamespace>
+    <AssemblyName>lol</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.8.0.16\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="ali.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="bge.jpg" />
+    <Content Include="eq\“你也有份”.png" />
+    <Content Include="eq\万世催化石.png" />
+    <Content Include="eq\三相之力.png" />
+    <Content Include="eq\三相之融.png" />
+    <Content Include="eq\上古钱币.png" />
+    <Content Include="eq\中娅悖论.png" />
+    <Content Include="eq\中娅沙漏.png" />
+    <Content Include="eq\亡者的板甲.png" />
+    <Content Include="eq\仙女护符.png" />
+    <Content Include="eq\以太精魂.png" />
+    <Content Include="eq\伊丽莎的奇迹.png" />
+    <Content Include="eq\传送坪.png" />
+    <Content Include="eq\傲之追猎者的刀锋.png" />
+    <Content Include="eq\先锋之眼.png" />
+    <Content Include="eq\先锋战旗.png" />
+    <Content Include="eq\兰德里的折磨.png" />
+    <Content Include="eq\兰顿之兆.png" />
+    <Content Include="eq\兹若特传送门.png" />
+    <Content Include="eq\军团圣盾.png" />
+    <Content Include="eq\冥火之拥.png" />
+    <Content Include="eq\冰川护甲.png" />
+    <Content Include="eq\冰脉护手.png" />
+    <Content Include="eq\冰霜之心.png" />
+    <Content Include="eq\冰霜之拳.png" />
+    <Content Include="eq\冰霜之牙.png" />
+    <Content Include="eq\冰霜之锤.png" />
+    <Content Include="eq\净蚀.png" />
+    <Content Include="eq\凡性的提醒.png" />
+    <Content Include="eq\十字镐.png" />
+    <Content Include="eq\卑劣手斧.png" />
+    <Content Include="eq\卡兹克的头颅.png" />
+    <Content Include="eq\卢安娜的飓风.png" />
+    <Content Include="eq\卢登的回声.png" />
+    <Content Include="eq\卢登的脉冲.png" />
+    <Content Include="eq\双生暗影.png" />
+    <Content Include="eq\反曲之弓.png" />
+    <Content Include="eq\吸血鬼节杖.png" />
+    <Content Include="eq\和谐圣杯.png" />
+    <Content Include="eq\围城武器返还.png" />
+    <Content Include="eq\围城视野守卫.png" />
+    <Content Include="eq\圣物之盾.png" />
+    <Content Include="eq\坚忍之属性手杖.png" />
+    <Content Include="eq\基克的聚合.png" />
+    <Content Include="eq\基舍艾斯碎片.png" />
+    <Content Include="eq\增幅典籍.png" />
+    <Content Include="eq\复用型药水.png" />
+    <Content Include="eq\多兰之刃.png" />
+    <Content Include="eq\多兰之戒.png" />
+    <Content Include="eq\多兰之盾.png" />
+    <Content Include="eq\多兰的失落之偶.png" />
+    <Content Include="eq\多兰的失落之刃.png" />
+    <Content Include="eq\多兰的失落之戒.png" />
+    <Content Include="eq\多兰的失落之盾.png" />
+    <Content Include="eq\多米尼克领主的致意.png" />
+    <Content Include="eq\夜之锋刃.png" />
+    <Content Include="eq\大天使之杖.png" />
+    <Content Include="eq\大天使之杖（快速充能）.png" />
+    <Content Include="eq\太空吸血鬼节杖.png" />
+    <Content Include="eq\太空死亡之舞.png" />
+    <Content Include="eq\太空比尔吉沃特弯刀.png" />
+    <Content Include="eq\太空水银弯刀.png" />
+    <Content Include="eq\太空海克斯科技枪刃.png" />
+    <Content Include="eq\太空玛莫提乌斯之噬.png" />
+    <Content Include="eq\太空破败王者之刃.png" />
+    <Content Include="eq\太空贪欲九头蛇.png" />
+    <Content Include="eq\太空饮血剑.png" />
+    <Content Include="eq\太空骑士之誓.png" />
+    <Content Include="eq\夺来的神谕精粹.png" />
+    <Content Include="eq\夺来的饼干.png" />
+    <Content Include="eq\夺萃之镰.png" />
+    <Content Include="eq\奇点灯笼.png" />
+    <Content Include="eq\奥术探测器.png" />
+    <Content Include="eq\女妖面纱.png" />
+    <Content Include="eq\女神之泪.png" />
+    <Content Include="eq\女神之泪（快速充能）.png" />
+    <Content Include="eq\始动的秒表.png" />
+    <Content Include="eq\守护天使.png" />
+    <Content Include="eq\守护者号角.png" />
+    <Content Include="eq\守护者战锤.png" />
+    <Content Include="eq\守护者法球.png" />
+    <Content Include="eq\守望者铠甲.png" />
+    <Content Include="eq\完美海克斯核心.png" />
+    <Content Include="eq\小兵去质器.png" />
+    <Content Include="eq\岚切.png" />
+    <Content Include="eq\巨人腰带.png" />
+    <Content Include="eq\巨型九头蛇.png" />
+    <Content Include="eq\巨神峰之心.png" />
+    <Content Include="eq\巨神峰之擎.png" />
+    <Content Include="eq\巫妖之祸.png" />
+    <Content Include="eq\巫术合剂.png" />
+    <Content Include="eq\布甲.png" />
+    <Content Include="eq\干扰水晶.png" />
+    <Content Include="eq\幻影之舞.png" />
+    <Content Include="eq\幽梦之怒.png" />
+    <Content Include="eq\幽梦之灵.png" />
+    <Content Include="eq\幽灵行者%28仅近战可用%29.png" />
+    <Content Include="eq\幽灵魄罗.png" />
+    <Content Include="eq\幽魂弯刀.png" />
+    <Content Include="eq\幽魂斗篷.png" />
+    <Content Include="eq\幽魂面具.png" />
+    <Content Include="eq\引力靴.png" />
+    <Content Include="eq\彩虹佳肴派对套餐！.png" />
+    <Content Include="eq\微现的远见守卫.png" />
+    <Content Include="eq\德拉克萨的暮刃.png" />
+    <Content Include="eq\忍者足具.png" />
+    <Content Include="eq\恶魔法典.png" />
+    <Content Include="eq\愤怒合剂.png" />
+    <Content Include="eq\技能合剂.png" />
+    <Content Include="eq\抗魔斗篷.png" />
+    <Content Include="eq\护盾图腾.png" />
+    <Content Include="eq\拯救.png" />
+    <Content Include="eq\振奋盔甲.png" />
+    <Content Include="eq\探索者守卫.png" />
+    <Content Include="eq\探索者的护臂.png" />
+    <Content Include="eq\控制守卫.png" />
+    <Content Include="eq\提亚马特.png" />
+    <Content Include="eq\攻城传送.png" />
+    <Content Include="eq\攻城传送（休眠）.png" />
+    <Content Include="eq\攻城弩炮.png" />
+    <Content Include="eq\救生索.png" />
+    <Content Include="eq\救赎.png" />
+    <Content Include="eq\斑比的熔渣.png" />
+    <Content Include="eq\斯塔缇克电刃.png" />
+    <Content Include="eq\斯特拉克的挑战护手.png" />
+    <Content Include="eq\旅行款合剂：巫术.png" />
+    <Content Include="eq\旅行款合剂：愤怒.png" />
+    <Content Include="eq\旅行款合剂：钢铁.png" />
+    <Content Include="eq\无尽之刃.png" />
+    <Content Include="eq\无用大棒.png" />
+    <Content Include="eq\日炎斗篷.png" />
+    <Content Include="eq\时光之杖.png" />
+    <Content Include="eq\时光之杖（快速充能）.png" />
+    <Content Include="eq\明朗之靴.png" />
+    <Content Include="eq\星灵残存物.png" />
+    <Content Include="eq\星界枷锁.png" />
+    <Content Include="eq\晶体护腕.png" />
+    <Content Include="eq\智慧末刃.png" />
+    <Content Include="eq\暗物质镰刀.png" />
+    <Content Include="eq\暴风之剑.png" />
+    <Content Include="eq\最后的轻语.png" />
+    <Content Include="eq\月华咒刃.png" />
+    <Content Include="eq\有点神奇之靴.png" />
+    <Content Include="eq\朔极之矛.png" />
+    <Content Include="eq\枢纽攻防战：围城武器栏.png" />
+    <Content Include="eq\格斗手套.png" />
+    <Content Include="eq\梅贾的窃魂卷.png" />
+    <Content Include="eq\棘刺背心.png" />
+    <Content Include="eq\正义荣耀.png" />
+    <Content Include="eq\死亡之女.png" />
+    <Content Include="eq\死亡之舞.png" />
+    <Content Include="eq\死兆星魔印.png" />
+    <Content Include="eq\死刑宣告.png" />
+    <Content Include="eq\比尔吉沃特弯刀.png" />
+    <Content Include="eq\水银之靴.png" />
+    <Content Include="eq\水银弯刀.png" />
+    <Content Include="eq\水银饰带.png" />
+    <Content Include="eq\永续意志夹心饼干.png" />
+    <Content Include="eq\沃格勒特的巫师冠.png" />
+    <Content Include="eq\沃格勒特的巫师帽.png" />
+    <Content Include="eq\治疗宝珠.png" />
+    <Content Include="eq\法力药水.png" />
+    <Content Include="eq\法师之靴.png" />
+    <Content Include="eq\活力夹心饼干.png" />
+    <Content Include="eq\浓缩佳肴.png" />
+    <Content Include="eq\海克斯核心mk-1型.png" />
+    <Content Include="eq\海克斯核心mk-2型.png" />
+    <Content Include="eq\海克斯核心原型.png" />
+    <Content Include="eq\海克斯科技GLP-800.png" />
+    <Content Include="eq\海克斯科技原型腰带-01.png" />
+    <Content Include="eq\海克斯科技左轮枪.png" />
+    <Content Include="eq\海克斯科技枪刃.png" />
+    <Content Include="eq\海克斯饮魔刀.png" />
+    <Content Include="eq\深渊面具.png" />
+    <Content Include="eq\游击者的军刀.png" />
+    <Content Include="eq\游牧民印章.png" />
+    <Content Include="eq\湮灭宝珠.png" />
+    <Content Include="eq\激发之匣.png" />
+    <Content Include="eq\灭世者的死亡之冠.png" />
+    <Content Include="eq\灭世者的死亡之帽.png" />
+    <Content Include="eq\灵风.png" />
+    <Content Include="eq\灵魂之锚.png" />
+    <Content Include="eq\炉火斗篷.png" />
+    <Content Include="eq\炼狱面具.png" />
+    <Content Include="eq\炽天使之拥.png" />
+    <Content Include="eq\炽热香炉.png" />
+    <Content Include="eq\热寂领域.png" />
+    <Content Include="eq\熔火之刃.png" />
+    <Content Include="eq\燃烧宝石.png" />
+    <Content Include="eq\爆裂魔杖.png" />
+    <Content Include="eq\特制魄罗佳肴.png" />
+    <Content Include="eq\狂徒铠甲.png" />
+    <Content Include="eq\狂战士胫甲.png" />
+    <Content Include="eq\狂热.png" />
+    <Content Include="eq\猎人的宽刃刀.png" />
+    <Content Include="eq\猎人的护身符.png" />
+    <Content Include="eq\猎人药水.png" />
+    <Content Include="eq\猛禽斗篷.png" />
+    <Content Include="eq\玛莫提乌斯之噬.png" />
+    <Content Include="eq\瑞莱的冰晶节杖.png" />
+    <Content Include="eq\生命药水.png" />
+    <Content Include="eq\疾射火炮.png" />
+    <Content Include="eq\疾行之靴.png" />
+    <Content Include="eq\监视图腾（饰品）.png" />
+    <Content Include="eq\监视残存物.png" />
+    <Content Include="eq\短剑.png" />
+    <Content Include="eq\石像鬼石板甲.png" />
+    <Content Include="eq\破损的秒表.png" />
+    <Content Include="eq\破败王者之刃.png" />
+    <Content Include="eq\破败王者之力.png" />
+    <Content Include="eq\神圣之剑.png" />
+    <Content Include="eq\神谕精粹.png" />
+    <Content Include="eq\神谕透镜.png" />
+    <Content Include="eq\禁忌雕像.png" />
+    <Content Include="eq\秒表.png" />
+    <Content Include="eq\窃来的侠盗药水.png" />
+    <Content Include="eq\窃来的侦查守卫.png" />
+    <Content Include="eq\窃来的生命药水.png" />
+    <Content Include="eq\窃法之刃.png" />
+    <Content Include="eq\米凯尔的坩埚.png" />
+    <Content Include="eq\紫雨林之拳.png" />
+    <Content Include="eq\红水晶.png" />
+    <Content Include="eq\纳什之牙.png" />
+    <Content Include="eq\缚法宝珠.png" />
+    <Content Include="eq\群星斗篷.png" />
+    <Content Include="eq\耀光.png" />
+    <Content Include="eq\考尔菲德的战锤.png" />
+    <Content Include="eq\腐败药水.png" />
+    <Content Include="eq\自然之力.png" />
+    <Content Include="eq\舒瑞娅的狂想曲.png" />
+    <Content Include="eq\苦行僧之刃.png" />
+    <Content Include="eq\范达姆领主的劫掠者.png" />
+    <Content Include="eq\荆棘之甲.png" />
+    <Content Include="eq\莫雷洛秘典.png" />
+    <Content Include="eq\萃取.png" />
+    <Content Include="eq\蓝水晶.png" />
+    <Content Include="eq\虚空之杖.png" />
+    <Content Include="eq\蜂刺.png" />
+    <Content Include="eq\血色之刃.png" />
+    <Content Include="eq\覆霜佳肴.png" />
+    <Content Include="eq\观测之石（饰品）.png" />
+    <Content Include="eq\负极斗篷.png" />
+    <Content Include="eq\贤者印章.png" />
+    <Content Include="eq\贪欲九头蛇.png" />
+    <Content Include="eq\超辣佳肴.png" />
+    <Content Include="eq\轻灵之靴.png" />
+    <Content Include="eq\远见改造.png" />
+    <Content Include="eq\追猎者的刀锋.png" />
+    <Content Include="eq\适应性头盔.png" />
+    <Content Include="eq\速度之靴.png" />
+    <Content Include="eq\遗失的章节.png" />
+    <Content Include="eq\金色传送器.png" />
+    <Content Include="eq\金色传送器（已禁用）.png" />
+    <Content Include="eq\钢铁合剂.png" />
+    <Content Include="eq\钢铁烈阳之匣.png" />
+    <Content Include="eq\钢铁烈阳之环.png" />
+    <Content Include="eq\锁子甲.png" />
+    <Content Include="eq\锯齿短匕.png" />
+    <Content Include="eq\长剑.png" />
+    <Content Include="eq\闪现地带.png" />
+    <Content Include="eq\防御塔：灭绝光线.png" />
+    <Content Include="eq\防御塔：风暴壁垒.png" />
+    <Content Include="eq\阿塔玛的清算.png" />
+    <Content Include="eq\附魔：战士.png" />
+    <Content Include="eq\附魔：熔渣巨人.png" />
+    <Content Include="eq\附魔：符能回声.png" />
+    <Content Include="eq\附魔：血刃.png" />
+    <Content Include="eq\陈旧的上古钱币.png" />
+    <Content Include="eq\陈旧的冰霜之牙.png" />
+    <Content Include="eq\陈旧的冰霜女皇的旨令.png" />
+    <Content Include="eq\陈旧的圣物之盾.png" />
+    <Content Include="eq\陈旧的山岳之容.png" />
+    <Content Include="eq\陈旧的巨神峰之擎.png" />
+    <Content Include="eq\陈旧的游牧民印章.png" />
+    <Content Include="eq\陈旧的窃法之刃.png" />
+    <Content Include="eq\陈旧的飞升护符.png" />
+    <Content Include="eq\随意开火.png" />
+    <Content Include="eq\雅典娜的邪恶圣杯.png" />
+    <Content Include="eq\霸王血铠.png" />
+    <Content Include="eq\飞升残存物.png" />
+    <Content Include="eq\饮血剑.png" />
+    <Content Include="eq\骑士之誓.png" />
+    <Content Include="eq\高级侦查图腾（饰品）.png" />
+    <Content Include="eq\高级真视图腾（饰品）.png" />
+    <Content Include="eq\鬼索的狂暴之刃.png" />
+    <Content Include="eq\魄罗佳肴.png" />
+    <Content Include="eq\魔切.png" />
+    <Content Include="eq\魔宗.png" />
+    <Content Include="eq\魔宗（快速充能）.png" />
+    <Content Include="eq\黄金福袋.png" />
+    <Content Include="eq\黑暗封印.png" />
+    <Content Include="eq\黑曜切割者.png" />
+    <Content Include="eq\黑色切割者.png" />
+    <Content Include="eq\黑色长矛.png" />
+    <Content Include="eq\鼓舞士气.png" />
+    <Content Include="hero\万花通灵 妮蔻.png" />
+    <Content Include="hero\不祥之刃 卡特琳娜.png" />
+    <Content Include="hero\九尾妖狐 阿狸.png" />
+    <Content Include="hero\亡灵战神 赛恩.png" />
+    <Content Include="hero\仙灵女巫 璐璐.png" />
+    <Content Include="hero\众星之子 索拉卡.png" />
+    <Content Include="hero\傲之追猎者 雷恩加尔.png" />
+    <Content Include="hero\光辉女郎 拉克丝.png" />
+    <Content Include="hero\兽灵行者 乌迪尔.png" />
+    <Content Include="hero\冰晶凤凰 艾尼维亚.png" />
+    <Content Include="hero\冰霜女巫 丽桑卓.png" />
+    <Content Include="hero\刀锋之影 泰隆.png" />
+    <Content Include="hero\刀锋舞者 艾瑞莉娅.png" />
+    <Content Include="hero\北地之怒 瑟庄妮.png" />
+    <Content Include="hero\卡牌大师 崔斯特.png" />
+    <Content Include="hero\发条魔灵 奥莉安娜.png" />
+    <Content Include="hero\唤潮鲛姬 娜美.png" />
+    <Content Include="hero\圣枪游侠 卢锡安.png" />
+    <Content Include="hero\圣锤之毅 波比.png" />
+    <Content Include="hero\堕落天使 莫甘娜.png" />
+    <Content Include="hero\复仇之矛 卡莉丝塔.png" />
+    <Content Include="hero\复仇焰魂 布兰德.png" />
+    <Content Include="hero\大发明家 黑默丁格.png" />
+    <Content Include="hero\天启者 卡尔玛.png" />
+    <Content Include="hero\寒冰射手 艾希.png" />
+    <Content Include="hero\山隐之焰 奥恩.png" />
+    <Content Include="hero\岩雀 塔莉垭.png" />
+    <Content Include="hero\巨魔之王 特朗德尔.png" />
+    <Content Include="hero\幻翎 洛.png" />
+    <Content Include="hero\弗雷尔卓德之心 布隆.png" />
+    <Content Include="hero\影流之主 劫.png" />
+    <Content Include="hero\影流之镰 凯隐.png" />
+    <Content Include="hero\德玛西亚之力 盖伦.png" />
+    <Content Include="hero\德玛西亚之翼 奎因.png" />
+    <Content Include="hero\德玛西亚皇子 嘉文四世.png" />
+    <Content Include="hero\德邦总管 赵信.png" />
+    <Content Include="hero\恶魔小丑 萨科.png" />
+    <Content Include="hero\惩戒之箭 韦鲁斯.png" />
+    <Content Include="hero\戏命师 烬.png" />
+    <Content Include="hero\战争之影 赫卡里姆.png" />
+    <Content Include="hero\战争之王 潘森.png" />
+    <Content Include="hero\战争女神 希维尔.png" />
+    <Content Include="hero\扭曲树精 茂凯.png" />
+    <Content Include="hero\披甲龙龟 拉莫斯.png" />
+    <Content Include="hero\探险家 伊泽瑞尔.png" />
+    <Content Include="hero\放逐之刃 锐雯.png" />
+    <Content Include="hero\无双剑姬 菲奥娜.png" />
+    <Content Include="hero\无极剑圣 易.png" />
+    <Content Include="hero\无畏战车 厄加特.png" />
+    <Content Include="hero\时光守护者 基兰.png" />
+    <Content Include="hero\时间刺客 艾克.png" />
+    <Content Include="hero\星界游神 巴德.png" />
+    <Content Include="hero\暗夜猎手 薇恩.png" />
+    <Content Include="hero\暗裔剑魔 亚托克斯.png" />
+    <Content Include="hero\暗黑元首 辛德拉.png" />
+    <Content Include="hero\暮光之眼 慎.png" />
+    <Content Include="hero\暮光星灵 佐伊.png" />
+    <Content Include="hero\暴怒骑士 克烈.png" />
+    <Content Include="hero\暴走萝莉 金克丝.png" />
+    <Content Include="hero\曙光女神 蕾欧娜.png" />
+    <Content Include="hero\未来守护者 杰斯.png" />
+    <Content Include="hero\末日使者 费德提克.png" />
+    <Content Include="hero\机械先驱 维克托.png" />
+    <Content Include="hero\机械公敌 兰博.png" />
+    <Content Include="hero\正义天使 凯尔.png" />
+    <Content Include="hero\正义巨像 加里奥.png" />
+    <Content Include="hero\武器大师 贾克斯.png" />
+    <Content Include="hero\死亡颂唱者 卡尔萨斯.png" />
+    <Content Include="hero\殇之木乃伊 阿木木.png" />
+    <Content Include="hero\水晶先锋 斯卡纳.png" />
+    <Content Include="hero\永恒梦魇 魔腾.png" />
+    <Content Include="hero\永猎双子 千珏.png" />
+    <Content Include="hero\沙漠死神 内瑟斯.png" />
+    <Content Include="hero\沙漠皇帝 阿兹尔.png" />
+    <Content Include="hero\河流之王 塔姆.png" />
+    <Content Include="hero\法外狂徒 格雷福斯.png" />
+    <Content Include="hero\海兽祭司 俄洛伊.png" />
+    <Content Include="hero\海洋之灾 普朗克.png" />
+    <Content Include="hero\深海泰坦 诺提勒斯.png" />
+    <Content Include="hero\深渊巨口 克格莫.png" />
+    <Content Include="hero\潮汐海灵 菲兹.png" />
+    <Content Include="hero\炼金术士 辛吉德.png" />
+    <Content Include="hero\熔岩巨兽 墨菲特.png" />
+    <Content Include="hero\爆破鬼才 吉格斯.png" />
+    <Content Include="hero\牛头酋长 阿利斯塔.png" />
+    <Content Include="hero\牧魂人 约里克.png" />
+    <Content Include="hero\狂战士 奥拉夫.png" />
+    <Content Include="hero\狂暴之心 凯南.png" />
+    <Content Include="hero\狂野女猎手 奈德丽.png" />
+    <Content Include="hero\猩红收割者 弗拉基米尔.png" />
+    <Content Include="hero\琴瑟仙女 娑娜.png" />
+    <Content Include="hero\瓦洛兰之盾 塔里克.png" />
+    <Content Include="hero\生化魔人 扎克.png" />
+    <Content Include="hero\疾风剑豪 亚索.png" />
+    <Content Include="hero\痛苦之拥 伊芙琳.png" />
+    <Content Include="hero\瘟疫之源 图奇.png" />
+    <Content Include="hero\皎月女神 黛安娜.png" />
+    <Content Include="hero\皮城女警 凯特琳.png" />
+    <Content Include="hero\皮城执法官 蔚.png" />
+    <Content Include="hero\盲僧 李青.png" />
+    <Content Include="hero\祖安怒兽 沃里克.png" />
+    <Content Include="hero\祖安狂人 蒙多医生.png" />
+    <Content Include="hero\离群之刺 阿卡丽.png" />
+    <Content Include="hero\符文法师 瑞兹.png" />
+    <Content Include="hero\翠神 艾翁.png" />
+    <Content Include="hero\英勇投弹手 库奇.png" />
+    <Content Include="hero\荆棘之兴 婕拉.png" />
+    <Content Include="hero\荒漠屠夫 雷克顿.png" />
+    <Content Include="hero\荣耀行刑官 德莱文.png" />
+    <Content Include="hero\蒸汽机器人 布里茨.png" />
+    <Content Include="hero\虚空之女 卡莎.png" />
+    <Content Include="hero\虚空之眼 维克兹.png" />
+    <Content Include="hero\虚空先知 玛尔扎哈.png" />
+    <Content Include="hero\虚空恐惧 科加斯.png" />
+    <Content Include="hero\虚空掠夺者 卡兹克.png" />
+    <Content Include="hero\虚空行者 卡萨丁.png" />
+    <Content Include="hero\虚空遁地兽 雷克塞.png" />
+    <Content Include="hero\蛮族之王 泰达米尔.png" />
+    <Content Include="hero\蜘蛛女皇 伊莉丝.png" />
+    <Content Include="hero\血港鬼影 派克.png" />
+    <Content Include="hero\解脱者 塞拉斯.png" />
+    <Content Include="hero\诡术妖姬 乐芙兰.png" />
+    <Content Include="hero\诺克萨斯之手 德莱厄斯.png" />
+    <Content Include="hero\诺克萨斯统领 斯维因.png" />
+    <Content Include="hero\赏金猎人 厄运小姐.png" />
+    <Content Include="hero\迅捷斥候 提莫.png" />
+    <Content Include="hero\远古巫灵 泽拉斯.png" />
+    <Content Include="hero\迷失之牙 纳尔.png" />
+    <Content Include="hero\逆羽 霞.png" />
+    <Content Include="hero\邪恶小法师 维迦.png" />
+    <Content Include="hero\酒桶 古拉加斯.png" />
+    <Content Include="hero\铁铠冥魂 莫德凯撒.png" />
+    <Content Include="hero\铸星龙王 奥瑞利安·索尔.png" />
+    <Content Include="hero\雪原双子 努努和威朗普.png" />
+    <Content Include="hero\雷霆咆哮 沃利贝尔.png" />
+    <Content Include="hero\青钢影 卡蜜尔.png" />
+    <Content Include="hero\风暴之怒 迦娜.png" />
+    <Content Include="hero\魂锁典狱长 锤石.png" />
+    <Content Include="hero\魔法猫咪 悠米.png" />
+    <Content Include="hero\魔蛇之拥 卡西奥佩娅.png" />
+    <Content Include="hero\麦林炮手 崔丝塔娜.png" />
+    <Content Include="hero\黑暗之女 安妮.png" />
+    <Content Include="hero\齐天大圣 孙悟空.png" />
+    <Content Include="hero\龙血武姬 希瓦娜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eq\.DS_Store" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
